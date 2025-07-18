@@ -1,0 +1,55 @@
+body {
+  background-color: turquoise;
+}
+
+h3 {
+  color: green;
+}
+
+/* css syntax */
+/* selector {
+    property: value;
+} */
+
+p {
+  color: white;
+  word-spacing: 5px;
+  letter-spacing: 5px;
+  text-align: right;
+  /* border: 5px solid red; */
+  /* border-width: 3px;
+  border-style: solid;
+  border-color: blue; */
+
+  border: 3px solid blue;
+}
+
+div {
+  text-align: justify;
+  text-decoration: underline;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid black;
+}
+
+div::first-letter {
+  font-size: 30px;
+}
+
+div span {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.second {
+  margin-left: 20px;
+}
+
+.third {
+  margin-left: 40px;
+}
+
+.custom-div {
+  color: red;
+  border-color: red;
+}

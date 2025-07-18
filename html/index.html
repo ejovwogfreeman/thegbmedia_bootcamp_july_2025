@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTM class</title>
+    <style>
+      .div-style {
+        background-color: blue;
+        color: white;
+        margin-bottom: 10px;
+      }
+      #div-style {
+        background-color: tomato;
+        color: white;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- html makes use of tags/elements -->
+    <h1>Hello world</h1>
+    <p>Hello world my name is gb and I am learning web dev</p>
+
+    <!-- ctrl + / => gives comment -->
+    <h1 style="background-color: red">Heading one</h1>
+    <h2>Heading two</h2>
+    <h3>Heading three</h3>
+    <h4>Heading four</h4>
+    <h5>Heading five</h5>
+    <h6>Heading six</h6>
+
+    <!-- paragraph -->
+    <p>Hello, my name is GB</p>
+    <hr />
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita odit
+      eveniet repellat qui asperiores harum maiores, est, voluptas voluptates
+      consequuntur distinctio odio ipsa perferendis commodi facilis numquam
+      earum nam consequatur?
+    </p>
+
+    <!-- div -->
+    <hr />
+    <div>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores vel
+      officiis voluptatum veritatis, break here <br />
+      totam provident similique ut sapiente alias, minus ratione ipsum ipsa modi
+      at temporibus soluta libero odit autem?
+    </div>
+
+    <!-- hr and br -->
+    <!-- br -> line brak, hr -> horizontal rule -->
+    <hr />
+    <!-- inline elements -->
+    <!-- Block level element are elements that takes up the width of the browser -->
+    <!-- Inline elements are elements that take just the width of their contents -->
+    <p>
+      the <strong style="background-color: red">quick</strong> <em>brown</em>
+      <u>fox</u> <mark>jumped</mark> <del>over</del> <strike>the</strike> l<span
+        style="color: red"
+        >a</span
+      >zy dog... <abbr title="World Health Organisation">WHO</abbr
+      ><span title="Hyper Text Markup Language">HTML</span>
+    </p>
+    <hr />
+    <!-- links and buttos -->
+    <button onclick="alert('HTML Class')">Click me</button>
+    <button onclick="lightMode()">Light Mode</button>
+    <button onclick="darkMode()">Dark Mode</button>
+    <hr />
+    <a href="https://facebook.com" target="_blank">facebook</a>
+    <a href="https://google.com" target="_blank">google</a>
+    <a href="about.html" target="_self">Visit about page</a>
+
+    <!-- lists (ol and ul) -->
+    <ol>
+      <h3>My favorite foods are</h3>
+      <li>Rice</li>
+      <li>Beans</li>
+      <li>Pasta</li>
+      <li>Yam and egg sauce</li>
+      <li>Noodles</li>
+    </ol>
+
+    <ul>
+      <h3>My favorite movies are</h3>
+      <li>Merlin</li>
+      <li>Game of thrones</li>
+      <li>Legend of the seeker</li>
+      <li>Legend of Aang</li>
+      <li>Legend of Kora</li>
+    </ul>
+    <hr />
+    <!-- table -->
+    <table border style="width: 100%">
+      <tr>
+        <th>S/N</th>
+        <th>Name</th>
+        <th>Email</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Mark Powells</td>
+        <td>mark@gmail.com</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>John Doe</td>
+        <td>john@company.com</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Mary Smith</td>
+        <td>mary@yahoo.com</td>
+      </tr>
+    </table>
+    <hr />
+
+    <!-- forms -->
+    <form>
+      <label for="">Name</label> <br />
+      <input type="text" placeholder="e.g John Doe" required /> <br /><br />
+      <label for="">Email</label><br />
+      <input type="email" value="john@gmail.com" readonly /> <br /><br />
+      <label for="">D.O.B</label><br />
+      <input type="date" /> <br /><br />
+      <label for="">Age</label><br />
+      <input type="number" /> <br /><br />
+      <label for="">Time</label><br />
+      <input type="time" /> <br /><br />
+      <label for="">Color</label><br />
+      <input type="color" /> <br /><br />
+      <label for="">Range</label><br />
+      <input type="range" /> <br /><br />
+      <label for="">Document</label><br />
+      <input type="file" /> <br /><br />
+      <label for="">Documents</label><br />
+      <input type="file" multiple /> <br /><br />
+
+      <!-- radio -->
+      <label for="">Religion</label> <br />
+      <input type="radio" name="religion" /> <label for="">Chiristian</label>
+      <input type="radio" name="religion" /> <label for="">Muslim</label>
+      <input type="radio" name="religion" /> <label for="">Others</label
+      ><br /><br />
+
+      <!-- checkbox -->
+      <label for="">Skillsets</label> <br />
+      <input type="checkbox" /> <label for="">Web design</label> <br />
+      <input type="checkbox" /> <label for="">Web development</label><br />
+      <input type="checkbox" /> <label for="">ui/ux</label><br />
+      <input type="checkbox" /> <label for="">corel draw</label><br />
+      <input type="checkbox" /> <label for="">data science</label><br />
+      <input type="checkbox" /> <label for="">data analytics</label>
+      <br /><br />
+
+      <!-- hello -->
+      <!-- select -->
+      <label for="">Skill</label> <br />
+      <select name="" id="">
+        <optgroup label="web">
+          <option value="">web design</option>
+          <option value="">web development</option>
+        </optgroup>
+        <optgroup label="design">
+          <option value="">ui/ux</option>
+          <option value="">corel draw</option>
+        </optgroup>
+        <optgroup label="python">
+          <option value="">data science</option>
+          <option value="">data analytics</option>
+        </optgroup>
+      </select>
+      <br /><br />
+      <input type="submit" value="create account" />
+      <!-- <button>Submit</button> -->
+    </form>
+    <hr />
+    <img src="shoe.png" alt="shoe image" /> <br />
+    <img src="https://thegbmedia.com/gbmedia.jpg" alt="" /><br />
+    <hr />
+    <video src="video.mp4" width="100%" controls loop autoplay></video>
+
+    <hr />
+    <!-- html attributes -->
+    <!-- attributes adds special meaning and functionality to our html tags -->
+    <!-- mandatory attributes -> href for links and anchor tags, src -> for image -->
+    <a href="">click me</a>
+    <img src="" alt="" />
+    <!-- other attributest are alt, target, id, class, title, style etc -->
+    <!-- style attribute is a special kind of attribute thats used for inline css -->
+
+    <p style="color: red">Hello world</p>
+    <div class="div-style">my first div</div>
+    <div class="div-style">my second div</div>
+    <div class="div-style">my third div</div>
+    <div id="div-style">my third div</div>
+    <div style="padding: 100px"></div>
+  </body>
+
+  <script>
+    let body = document.querySelector("body");
+    function darkMode() {
+      body.style.background = "black";
+      body.style.color = "white";
+    }
+    function lightMode() {
+      body.style.background = "white";
+      body.style.color = "black";
+    }
+  </script>
+</html>

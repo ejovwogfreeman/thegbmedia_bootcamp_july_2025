@@ -1,0 +1,102 @@
+/* universal selector */
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+/* element or tag selectors */
+
+h1 {
+  color: red;
+}
+
+p {
+  font-size: 2rem;
+  color: blue;
+}
+
+article {
+  margin-bottom: 10px;
+}
+
+/* class selectors (they are selected using dot or period) */
+.para {
+  background-color: green;
+}
+
+/* id selectors (they are selected using a number or # symbol) */
+#sec {
+  background-color: blue;
+  color: white;
+}
+
+/* pseudo classes  */
+span:hover {
+  background-color: red;
+  cursor: pointer;
+  color: white;
+  transition: 0.5s ease-in-out;
+}
+
+a:visited {
+  color: green;
+}
+
+a:active {
+  color: blueviolet;
+}
+
+article:nth-last-of-type(odd) {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* pseudo elelment */
+main::first-letter {
+  font-size: 30px;
+}
+
+main::first-line {
+  background-color: yellow;
+}
+
+/* combinators */
+/* parent child
+parent > child
+parent + child
+parent ~ child */
+
+/* descendant combinator */
+main a:visited {
+  color: red;
+}
+
+section article {
+  color: red;
+}
+
+section a:visited {
+  color: peru;
+}
+
+/* child combinator */
+section > p {
+  background-color: green;
+}
+
+/* next sibling combinator */
+p + span {
+  color: violet;
+}
+
+/* subsequent sibling combinator */
+p ~ span {
+  background-color: brown;
+}
+
+/* grouping selectors */
+
+article,
+p,
+div {
+  font-style: italic;
+}
