@@ -1,0 +1,50 @@
+/* css position */
+/* 1) static position -> default position of all element */
+/* 2) relative position -> element position with respect to its original position */
+/* 3) absolute position -> element position with respect to its parent element position */
+/* 4) fixed position -> fixed on the screen no matter your scroll height or position */
+/* 5) sticky position behaves as both static and fixed */
+
+h1 {
+  position: relative;
+  top: 100px;
+  left: 200px;
+}
+
+.box {
+  border: 1px solid black;
+  width: 100%;
+  height: 300px;
+  position: relative;
+}
+
+h2 {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
+.fixed-link {
+  position: fixed;
+  background-color: black;
+  color: white;
+  bottom: 0px;
+  right: 0px;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  padding: 20px;
+  position: sticky;
+  top: 0px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: white;
+}
