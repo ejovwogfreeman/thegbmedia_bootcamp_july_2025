@@ -1,0 +1,45 @@
+.box {
+  /* named colors */
+  background-color: red;
+  background-color: blue;
+  background-color: green;
+
+  /* html 5 colors */
+  background-color: aquamarine;
+  background-color: tomato;
+  background-color: teal;
+
+  /* hexadecimal colors */
+  /* background-color: #abcdef1234567890; */
+  background-color: #abcdef;
+  background-color: #123456;
+  background-color: #a134bc;
+  background-color: #000000;
+  background-color: #ffffff;
+  background-color: #ff0000;
+  background-color: #00ff00;
+  background-color: #0000ff;
+  background-color: #000;
+  background-color: #fff;
+  background-color: #f00;
+  background-color: #0f0;
+  background-color: #00f;
+
+  /* rgb colors (red, green and blue */
+  background-color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  background-color: rgb(255, 0, 0);
+  background-color: rgb(0, 255, 0);
+  background-color: rgb(0, 0, 255);
+  /* background-color: rgb(255, 255, 0);
+  background-color: rgb(255, 0, 255);
+  background-color: rgb(0, 255, 255); */
+
+  /* rgba colors (extension of rgb with alpha value) */
+  background-color: rgb(0, 0, 0, 1);
+  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 0, 0, 0.5);
+  background-color: rgba(0, 255, 0, 0.5);
+  background-color: rgba(0, 0, 255, 0.5);
+  background-color: rgba(180, 201, 110, 0.5);
+}
