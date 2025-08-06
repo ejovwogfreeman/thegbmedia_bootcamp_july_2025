@@ -43,3 +43,48 @@
   background-color: rgba(0, 0, 255, 0.5);
   background-color: rgba(180, 201, 110, 0.5);
 }
+
+/* px is the basic or default unit...its a fixed unit */
+
+.box {
+  /* font-size: 16px; default font size is 16px */
+
+  /* rem, em are relative sizes 1rem or 1em = 16px */
+  /* font-size: 2rem; */
+  /* font-size: 2em; */
+}
+
+/* % is a responsive unit i.e it grows and shrik with the screen */
+/* vw: viewport with (similar to percent) */
+/* vh: viewport height (similar to percent) */
+/* span {
+  height: 20px;
+  width: 100px;
+  display: block;
+  background-color: red;
+} */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: red;
+  width: 960px;
+  margin: auto;
+  /* height: 100vh; */
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    width: 760px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    width: 95%;
+  }
+}
