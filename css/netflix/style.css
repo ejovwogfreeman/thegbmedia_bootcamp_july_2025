@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Concert+One&family=Dancing+Script:wght@400..700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Great+Vibes&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #e50914;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-variation-settings: "wdth" 100;
+}
+
+header {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("./img/background.jpg");
+  height: 97vh;
+  background-size: cover;
+  padding: 20px 10%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav img {
+  width: 150px;
+}
+
+nav a {
+  background-color: var(--primary);
+  color: white;
+  text-decoration: none;
+  border-radius: 3px;
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+header div {
+  color: white;
+  text-align: center;
+  margin-top: 150px;
+  padding: 0px 50px;
+}
+
+header div h1 {
+  font-size: 2.5rem;
+}
+
+header div p {
+  margin-top: 15px;
+}
+
+header form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+header form input {
+  background-color: transparent;
+  padding: 15px;
+  border-radius: 3px;
+  width: 300px;
+  border: 1px solid gray;
+}
+
+header form button {
+  background-color: var(--primary);
+  padding: 15px;
+  border-radius: 3px;
+  margin-left: 7px;
+  outline: none;
+  border: none;
+  color: white;
+}
