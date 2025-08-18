@@ -14,12 +14,13 @@ body {
   font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
   font-variation-settings: "wdth" 100;
+  background-color: black;
 }
 
 header {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("./img/background.jpg");
-  height: 97vh;
+  height: 100vh;
   background-size: cover;
   padding: 20px 10%;
 }
@@ -81,4 +82,123 @@ header form button {
   outline: none;
   border: none;
   color: white;
+}
+
+section {
+  background-color: black;
+  color: white;
+  position: relative;
+  height: 100vh;
+}
+
+.curved-top-border {
+  height: 100px;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  position: absolute;
+  width: 100%;
+  top: -50px;
+  background: linear-gradient(
+    to right,
+    rgba(33, 13, 22, 1) 16%,
+    rgba(184, 40, 105, 1),
+    rgba(229, 9, 20, 1),
+    rgba(184, 40, 105, 1),
+    rgba(33, 13, 22, 1) 84%
+  );
+}
+.curved-top {
+  height: 100px;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  position: absolute;
+  width: 100%;
+  top: -47px;
+  background: radial-gradient(
+      50% 500% at 50% -420%,
+      rgba(64, 97, 231, 0.4) 80%,
+      rgba(0, 0, 0, 0.1) 100%
+    ),
+    black;
+}
+
+.section-contents {
+  position: absolute;
+  padding: 20px 10%;
+  width: 100%;
+}
+
+.section-contents h3 {
+  margin-bottom: 20px;
+}
+
+.cover-slider {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 50px;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+.cover-slider .cover {
+  height: 230px;
+  position: relative;
+}
+
+.cover-slider .cover img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.cover-slider .cover h1 {
+  position: absolute;
+  left: -20px;
+  bottom: 10px;
+  font-size: 5rem;
+  color: black; /* text fill color */
+  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white,
+    1px 1px 0 white; /* creates a white outline */
+}
+
+.more-reason {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+  /* margin-top: 20px; */
+}
+
+.more-reason .reason {
+  background: linear-gradient(-45deg, #210f18, #1a2144);
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  height: 300px;
+}
+
+.more-reason .reason h1 {
+  margin-bottom: 20px;
+}
+
+.more-reason .reason p {
+  color: rgb(232, 225, 225);
+}
+
+.more-reason .reason i {
+  font-size: 30px;
+}
+
+.more-reason .reason .icon-box {
+  width: 50px;
+  height: 50px;
+  background-color: #f17dbf;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
 }
